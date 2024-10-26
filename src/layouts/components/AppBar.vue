@@ -30,7 +30,7 @@
 
   const tabAttrs = computed(() => {
     const attrs : { height: string } = { height: '0px' }
-    if (props.block) attrs.height = '150px'
+    if (props.block) attrs.height = '100px'
     return attrs
   })
 
@@ -39,17 +39,17 @@
 <template>
   <v-app-bar
     class="bg-offblack"
-    :height="mdAndUp ? '150px' : '60px'"
+    :height="mdAndUp ? '100px' : '50px'" 
     scroll-behavior="elevate"
     style="right: 0;"
   >
-    <v-img
-      :max-width="mdAndUp ? '200px' : '100px'"
+    <!-- <v-img
+      :max-width="mdAndUp ? '120px' : '80px'" 
       :src="logothermo"
       class="hidden-sm-and-down"
-      max-height="120px"
-      min-height="120px"
-    />
+      max-height="60px"
+      min-height="60px"
+    /> -->
     <v-toolbar-title>
       <RouterLink
         :text="appData.title"
@@ -72,7 +72,7 @@
           :ripple="false"
           :to="item.name === 'Home'? '/' : ('/' + item.name.toLowerCase())"
           class="font-weight-medium text-grey"
-          min-width="120px"
+          min-width="100px"
           selected-class="text-primary"
           variant="text"
         >
