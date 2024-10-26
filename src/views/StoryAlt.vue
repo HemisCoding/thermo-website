@@ -38,10 +38,10 @@
         <Heading
           align="left"
           class="font-weight-bold py-3"
-          title="Our Values"
+          title="Valorile Noastre"
         />
         <Body
-          text="Duis fringilla mauris ac pellentesque suscipit. Vestibulum in feugiat felis. Cras eget mattis lectus, sit amet ultricies leo. Donec imperdiet diam eu lectus scelerisque accumsan. Quisque sollicitudin, diam non eleifend tempor, tortor tortor pulvinar enim, sit amet maximus neque metus ac nulla. Morbi pellentesque leo ut nulla scelerisque pulvinar. In hac habitasse platea dictumst. Donec scelerisque ante ante, vel tempor dolor auctor ut. Sed et luctus leo, eu egestas sapien. In semper commodo urna, id lacinia mi pretium eu. Suspendisse ornare blandit ligula id fermentum. Nulla lobortis, ligula quis consequat elementum, elit odio fringilla ligula, commodo tristique leo elit ac ex. Vestibulum semper sagittis odio sed aliquam. Pellentesque at turpis vel augue scelerisque malesuada at sit amet augue."
+          text="La Thermo-Expert, valorile noastre definesc fiecare fereastră montată și fiecare proiect finalizat. Credem în calitate fără compromisuri, dedicare și încredere reciprocă cu fiecare client. Ne asigurăm că soluțiile oferite nu doar îmbunătățesc confortul locuinței, ci și durabilitatea acesteia. Suntem pasionați de inovație și de a aduce mereu cele mai bune produse și servicii pentru casa ta. În fiecare proiect, de la mic la mare, ne ghidăm după aceleași principii: profesionalism, transparență și un angajament profund față de satisfacția clientului. Thermo-Expert – pentru o locuință sigură, confortabilă și de încredere!"
         />
         <Btn
           class="my-10 elevation-0 mx-1"
@@ -54,7 +54,7 @@
         >
           <span
             class="font-weight-black text-none"
-            v-text="`Purchase ${appData.title}`"
+            v-text="`Contacteaza-ne`"
           />
         </Btn>
         <Btn
@@ -64,7 +64,7 @@
         >
           <span
             class="font-weight-black text-white"
-            v-text="'Learn More'"
+            v-text="'Vezi Serviciile Oferite'"
           />
         </Btn>
       </v-col>

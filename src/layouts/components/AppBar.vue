@@ -43,13 +43,13 @@
     scroll-behavior="elevate"
     style="right: 0;"
   >
-    <!-- <v-img
+    <v-img
       :max-width="mdAndUp ? '120px' : '80px'" 
       :src="logothermo"
       class="hidden-sm-and-down"
       max-height="60px"
       min-height="60px"
-    /> -->
+    />
     <v-toolbar-title>
       <RouterLink
         :text="appData.title"

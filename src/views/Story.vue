@@ -26,11 +26,11 @@
         <Heading
           align="left"
           class="font-weight-bold py-3"
-          title="Who are we?"
+          title="Cine suntem noi?"
         />
         <Body
           align="left"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nibh, dapibus id turpis in, feugiat pharetra purus. Vivamus convallis erat eget lacinia molestie. Aliquam libero urna, imperdiet sed ipsum at, cursus accumsan nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris non dui volutpat, dignissim lectus quis, posuere lectus. Aliquam condimentum consectetur ante nec efficitur. Nulla id enim pulvinar, tincidunt mauris et, fringilla leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec id est vitae neque auctor elementum vitae ut justo. Nam tristique scelerisque fermentum. Sed in tincidunt leo. Nullam eu imperdiet enim. Nam semper leo eu diam rutrum lacinia. Nam fermentum leo nec lacus efficitur, tincidunt fermentum dui blandit. Nunc mattis neque ac turpis sagittis gravida."
+          text="Thermo-Expert, fondată în 2017 în inima Oneștiului, este mai mult decât o firmă de termopane – suntem partenerii tăi de încredere în crearea spațiului perfect. Cu sute de proiecte finalizate cu succes atât în România, cât și în afara țării, am câștigat recunoașterea prin profesionalism, inovație și dedicare pentru excelență. De la ferestre durabile până la uși personalizate, fiecare detaliu reflectă angajamentul nostru față de calitate. Alege Thermo-Expert și transformă-ți locuința într-un loc mai cald, mai luminos și mai sigur!"
         />
         <Btn
           class="my-10 elevation-0 mx-1"
@@ -43,7 +43,7 @@
         >
           <span
             class="font-weight-black text-none"
-            v-text="`Purchase ${appData.title}`"
+            v-text="`Contacteza echipa ${appData.title}`"
           />
         </Btn>
         <Btn
@@ -53,7 +53,7 @@
         >
           <span
             class="font-weight-black text-white"
-            v-text="'Learn More'"
+            v-text="'Vezi Proiectele Noastre'"
           />
         </Btn>
       </v-col>

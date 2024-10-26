@@ -5,7 +5,7 @@
 
 <template>
   <v-main>
-    <section :style="mdAndUp? 'margin-top: 210px;': 'margin-top:50px;'">
+    <section :style="mdAndUp? 'margin-top: 150px;': 'margin-top:20px;'">
       <RouterView />
     </section>
   </v-main>
