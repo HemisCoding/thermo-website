@@ -1,48 +1,47 @@
 <script setup lang="ts">
-  interface Props {
-    name: string
-    src: string
-    title: string
+import { defineProps } from 'vue';
 
-    /* TODO: implement validator */
-    // validator: (val) => {
-    //       return val.every(v => ({}).hasOwnProperty.call(v, 'link') && ({}).hasOwnProperty.call(v, 'icon'))
-    // }
-    socialLinks : {
-      link: string
-      icon: string
-    }[]
-  }
-  defineProps<Props>()
+interface SocialLink {
+  link: string;
+  icon: string;
+}
+
+interface Props {
+  name: string;
+  src: string;
+  title: string;
+  socialLinks: SocialLink[];
+}
+
+const props = defineProps<Props>();
 </script>
 
 <template>
   <div>
-    <v-hover v-slot="{ isHovering, props }">
+    <v-hover v-slot="{ isHovering, props: hoverProps }">
       <v-card
         class="pa-3"
         max-height="400"
         variant="text"
         width="auto"
-        border
         tile
-        v-bind="props"
+        v-bind="hoverProps"
       >
         <v-img
-          :src="src"
+          :src="props.src"
           height="100%"
           min-height="300"
           cover
         >
           <v-overlay
-            :model-value="isHovering"
+            :model-value="Boolean(isHovering)"
             class="d-flex transition-fast-in-fast-out v-card--reveal align-center justify-center"
             opacity="0.8"
             scrim="surface-light"
             contained
           >
             <v-btn
-              v-for="site in socialLinks"
+              v-for="site in props.socialLinks"
               :key="site.link"
               :href="site.link"
               class="mx-2"
@@ -65,11 +64,11 @@
         >
           <div
             class="font-weight-bold mb-2 text-left"
-            v-text="name"
+            v-text="props.name"
           />
           <div
             class="text-left"
-            v-text="title"
+            v-text="props.title"
           />
         </v-card-text>
       </v-card>

@@ -1,43 +1,45 @@
 <script setup lang="ts">
-  interface Props {
-    id: string | number
-    title: string
-    subtitle: string
-    src: string
-    date: string
-    description: string
-    tags: string[]
-    category: string
-  }
+import { defineProps, defineEmits } from 'vue';
 
-  defineProps<Props>()
+interface Props {
+  id: string | number;
+  title: string;
+  subtitle: string;
+  src: string;
+  date: string;
+  description: string;
+  tags: string[];
+  category: string;
+}
+
+const props = defineProps<Props>();
 </script>
 
 <template>
-  <v-hover v-slot="{ isHovering, props }">
+  <v-hover v-slot="{ isHovering, props: hoverProps }">
     <v-card
       class="px-auto"
       max-height="400"
       variant="flat"
       width="auto"
       tile
-      v-bind="props"
+      v-bind="hoverProps"
     >
       <v-img
-        :src="src"
+        :src="props.src"
         max-height="300"
         min-height="300"
         cover
       >
         <v-overlay
-          :model-value="isHovering"
+          :model-value="Boolean(isHovering)"
           class="d-flex transition-fast-in-fast-out v-card--reveal align-center justify-center text-offblock text-center"
           opacity="0.8"
           scrim="primary"
           contained
         >
           <v-btn
-            :to="`/project/${id}`"
+            :to="`/project/${props.id}`"
             class="ml-n2 mb-2"
             size="50"
             variant="tonal"
@@ -52,11 +54,11 @@
           </v-btn>
           <div
             class="font-weight-black mb-2"
-            v-text="title"
+            v-text="props.title"
           />
           <div
             class="mb-2"
-            v-text="subtitle"
+            v-text="props.subtitle"
           />
         </v-overlay>
       </v-img>
@@ -65,5 +67,5 @@
 </template>
 
 <style lang="scss" scoped>
-
+/* Add any relevant styles here */
 </style>
