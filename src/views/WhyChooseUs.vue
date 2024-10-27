@@ -6,10 +6,10 @@
     title: string,
     description: string
   }[]>([
-    { title: 'Solutions Based', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nibh, dapibus id turpis in, feugiat pharetra purus. Vivamus convallis erat eget lacinia molestie. Aliquam libero urna, imperdiet sed ipsum at, cursus accumsan nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.' },
-    { title: 'Professional Developers', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nibh, dapibus id turpis in, feugiat pharetra purus. Vivamus convallis erat eget lacinia molestie. Aliquam libero urna, imperdiet sed ipsum at, cursus accumsan nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.' },
-    { title: 'Modular, Adoptable Code', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nibh, dapibus id turpis in, feugiat pharetra purus. Vivamus convallis erat eget lacinia molestie. Aliquam libero urna, imperdiet sed ipsum at, cursus accumsan nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.' },
-    { title: 'Customizable', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem nibh, dapibus id turpis in, feugiat pharetra purus. Vivamus convallis erat eget lacinia molestie. Aliquam libero urna, imperdiet sed ipsum at, cursus accumsan nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.' },
+    { title: 'Orientare către Soluții', description: 'Indiferent de provocări, găsim soluția perfectă pentru fiecare proiect. De la design personalizat la execuție impecabilă, ne concentrăm pe rezultate care aduc valoare reală locuinței tale.' },
+    { title: 'Profesioniști cu Experiență', description: 'Echipa noastră de experți lucrează cu pasiune și atenție la detalii, asigurându-se că fiecare montaj îndeplinește cele mai înalte standarde de calitate.' },
+    { title: 'Tehnologie Modulară și Flexibilă', description: 'Folosim tehnologii de ultimă generație și soluții flexibile, care se adaptează ușor nevoilor și preferințelor tale, pentru o experiență fără compromisuri.' },
+    { title: 'Personalizare Totală', description: 'Fiecare client este unic, la fel și proiectul său. Îți oferim posibilitatea de a personaliza fiecare detaliu, astfel încât rezultatul final să fie exact cum ți-ai imaginat.' },
   ])
 </script>
 
@@ -30,7 +30,7 @@
         md="6"
       >
         <Subheading
-          title="Why Choose Us"
+          title="De ce să ne alegi pe noi?"
         />
         <Divider align="left" />
         <v-expansion-panels>
@@ -54,14 +54,24 @@
         cols="12"
         md="6"
       >
-        <Subheading
+        <!-- <Subheading
           class="primary--text"
           title="Blog Posts"
         />
         <Divider align="left" />
         <template v-for="(post, _i) in appData.blogPosts" :key="_i">
           <Post :post="post" v-bind="post" />
-        </template>
+        </template> -->
+        <Btn
+          class="my-10 elevation-0 mx-1"
+          variant="flat"
+          rounded
+        >
+          <span
+            class="font-weight-black text-white"
+            v-text="'Vezi Proiectele Noastre'"
+          />
+        </Btn>
       </v-col>
     </v-row>
   </Section>

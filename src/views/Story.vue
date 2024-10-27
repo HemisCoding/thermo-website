@@ -43,7 +43,7 @@
         >
           <span
             class="font-weight-black text-none"
-            v-text="`Contacteza echipa ${appData.title}`"
+            v-text="`Contactează-ne`"
           />
         </Btn>
         <Btn

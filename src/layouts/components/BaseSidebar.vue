@@ -1,38 +1,56 @@
 <script setup lang="ts">
-  import { useAppData } from '@/stores/mockup'
+import { useAppData } from '@/stores/mockup'
+import { useRouter } from 'vue-router'
+import { ref, watch } from 'vue'
 
-  interface Props {
-    drawer?: boolean
-    items: {
-      icon: string
-      name : string
-    }[] | []
+const router = useRouter()
+const drawer = ref(false) // Definește `drawer` ca ref reactiv
+
+// Definește `Props` pentru items
+interface Props {
+  items: {
+    icon: string
+    name: string
+  }[] | []
+}
+
+// Folosește defineProps pentru a accesa items din props
+const { items } = withDefaults(defineProps<Props>(), {
+  items: () => []
+})
+
+const appData = useAppData()
+
+// Închide drawer-ul la schimbarea rutei
+watch(
+  () => router.currentRoute.value,
+  () => {
+    drawer.value = false
   }
-
-  withDefaults(defineProps<Props>(), {
-    drawer: false,
-    items: () => { return [] },
-  })
-
-  defineEmits(['input'])
-
-  const appData = useAppData()
+)
 </script>
 
 <template>
+  <v-btn
+    icon
+    @click="drawer = !drawer">
+      <v-icon style="margin-right: 3vw;">
+        mdi-menu
+      </v-icon>
+  </v-btn>
+
   <v-navigation-drawer
+    v-model="drawer"
     :elevation="20"
-    :model-value="drawer"
     location="right"
     style="height: 100vh;"
     fixed
     hide-overlay
-    @input="$emit('input', $event)"
+    class="bg-offblack"
   >
+  
     <v-list
-      :items="items"
       dense
-      items-props
       nav
     >
       <v-list-item

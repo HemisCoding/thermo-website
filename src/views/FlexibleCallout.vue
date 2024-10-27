@@ -7,13 +7,14 @@
 <template>
   <Section
     id="callout"
-    class="bg-grey-lighten-3"
+    class="bg-grey-darken-3"
   >
-    <div class="justify-center align-center text-center">
+    <div class="justify-center align-center text-center mx-1">
       <Heading
         align="center"
-        class="font-weight-bold"
-        title="Flexibilitate și Varietate în Alegere și Montaj"
+        class="font-weight-bold ma-*"
+        color="grey-lighten-2"
+        title="Flexibilitate & Varietate"
       />
       <Body
         align="center"
@@ -27,7 +28,7 @@
         rounded
       >
         <span
-          class="font-weight-medium text-none"
+          class="text-primary font-weight-bold text-none"
           v-text="`Contactează-ne`"
         />
       </Btn>

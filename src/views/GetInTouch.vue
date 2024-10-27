@@ -18,25 +18,16 @@
     space="20"
   >
     <v-container fluid>
-      <v-row align="start">
+      <v-row align="start" justify="center">
         <v-col
           class="px-12"
-          cols="3"
+          cols="6"
           sm="6"
         >
           <Subheading
             align="left"
-            class="font-weight-black primary--text"
-            title="GET IN TOUCH"
-          />
-          <Body
-            align="left"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet mauris non venenatis auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per."
-          />
-          <Subheading
-            align="left"
             class="primary--text"
-            title="Contact Information"
+            title="Contact"
           />
           <Subtitle
             title="Company"
@@ -44,7 +35,7 @@
           />
           <Body
             space="2"
-            text="Company Name A"
+            text="Thermo Expert"
           />
           <Subtitle
             title="Email"
@@ -64,7 +55,7 @@
           />
         </v-col>
         <v-col
-          cols="9"
+          cols="6"
           sm="6"
         >
           <v-row no-gutters>

@@ -3,49 +3,49 @@
     [
       {
         icon: 'mdi-flash',
-        title: 'Fast Loads',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
+        title: 'Montaj Rapid',
+        text: 'Îți livrăm calitate și eficiență, cu un montaj rapid și profesional, astfel încât să te bucuri de noile ferestre sau uși cât mai repede.',
       },
       {
         icon: 'mdi-cog',
         outlined: true,
-        title: 'Customizable Sections',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
+        title: 'Aranjare Completă',
+        text: 'Transformă-ți casa după gustul tău! Oferim soluții de personalizare adaptate stilului tău, fie că dorești finisaje moderne sau clasice.',
       },
       {
         icon: 'mdi-responsive',
         avatarColor: 'offblack',
         outlined: true,
-        title: 'Responsive',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
+        title: 'Design Adaptabil',
+        text: 'Fiecare proiect este creat pentru a se integra perfect în spațiul tău, oferind confort și eleganță în orice locuință sau birou.',
       },
       {
         icon: 'mdi-face-agent',
-        title: 'Friendly Support',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
+        title: 'Suport Prietenos',
+        text: 'Echipa noastră de suport e mereu la dispoziția ta pentru a răspunde întrebărilor și a oferi asistență înainte, în timpul și după instalare.',
       },
       {
         icon: 'mdi-auto-fix',
-        title: 'Beautiful Designs',
+        title: 'Design de Impact',
         avatarColor: '#0077b5',
         outlined: true,
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
+        text: 'Alegem cu grijă materialele și finisajele pentru un design care să impresioneze și să reziste în timp.',
       },
       {
         icon: 'mdi-calendar',
-        title: 'Flexible Schedule',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
+        title: 'Program Flexibil',
+        text: 'Ne adaptăm programul pentru a răspunde nevoilor tale și a facilita instalarea ferestrelor sau ușilor în cele mai convenabile momente.',
       },
       {
         icon: 'mdi-magnify',
-        title: 'Search Engine Optimization',
+        title: 'Optimizare Energetică',
         avatarColor: '#0077b5',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
+        text: 'Ferestrele și ușile noastre sunt gândite pentru a îmbunătăți eficiența energetică a locuinței tale, reducând costurile de încălzire și răcire.',
       },
       {
         icon: 'mdi-thought-bubble',
-        title: 'Versatile Content Support',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ante a quam dignissim venenatis.',
+        title: 'Consultanță Personalizată',
+        text: 'Oferim sfaturi și recomandări pentru a alege produsele potrivite, astfel încât să obții exact ce ți-ai dorit, fără compromisuri.',
       },
     ]
   )
@@ -60,7 +60,7 @@
       <Heading
         align="center"
         class="font-weight-bold"
-        title="Our Services"
+        title="Serviciile Noastre"
       />
       <Divider
         align="center"

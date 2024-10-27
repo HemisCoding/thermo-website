@@ -33,6 +33,7 @@
 <template>
   <Section
     id="welcome-feature"
+    class="bg-grey-lighten-2"
   >
     <div class="justify-center align-center">
       <Heading
@@ -50,6 +51,7 @@
       />
     </div>
     <v-row
+    
       align="center"
       class="px-10"
       justify="center"
@@ -60,7 +62,7 @@
           md="3"
         >
           <Feature
-            class="pa-3"
+            class="pa-3 bg-grey-lighten-2"
             v-bind="feature"
           />
         </v-col>

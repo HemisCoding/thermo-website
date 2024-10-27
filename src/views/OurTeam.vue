@@ -48,6 +48,8 @@
 <template>
   <Section
     id="our-team"
+    class="bg-grey-lighten-2"
+
   >
     <div class="justify-center align-center">
       <Heading

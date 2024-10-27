@@ -14,7 +14,7 @@
     space="0"
   >
     <v-img
-      :min-height="695"
+      :max-height="900"
       :src="BackgroundImg"
       cover
     >
@@ -47,23 +47,13 @@
                   class="text-primary font-weight-bold text-none mr-4 mb-1"
                   color="white"
                   height="50px"
-                  href="https://store.vuetifyjs.com/products/flairo-theme-pro"
+                  href="/contact"
                   target="_blank"
-                  rounded
-                >
-                  <span v-text="`Solicită o ofertă`" />
-                </Btn>
-                <Btn
-                  class="font-weight-bold text-none mr-4 mb-1"
-                  color="white"
-                  height="50px"
-                  href="https://store.vuetifyjs.com/products/flairo-theme-pro"
-                  target="_blank"
-                  variant="outlined"
                   rounded
                 >
                   <span v-text="`Contactează-ne`" />
                 </Btn>
+               
               </v-col>
               <v-col
                 cols="12"

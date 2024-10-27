@@ -24,7 +24,6 @@
     { name: 'About', icon: 'mdi-account-group' },
     { name: 'Services', icon: 'mdi-book-open-variant' },
     { name: 'Portfolio', icon: 'mdi-book' },
-    { name: 'Blog', icon: 'mdi-web' },
     { name: 'Contact', icon: 'mdi-phone' },
   ])
 
@@ -89,12 +88,6 @@
       </v-tabs>
     </div>
     <div v-else>
-      <v-btn
-        icon
-        @click="drawer=true"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
       <BlogSidebar
         v-if="route.name === '/blog'"
         :drawer="drawer"

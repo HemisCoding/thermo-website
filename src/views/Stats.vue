@@ -2,10 +2,10 @@
 import { ref, onMounted } from 'vue'
 
 const stats = ref([
-  { text: 'Awards Won', statNumber: 5, outlined: true, color: 'white' },
-  { text: 'Projects', statNumber: 322, color: 'white' },
-  { text: 'Positive Reviews', statNumber: 2182, outlined: true, color: 'white' },
-  { text: 'Revenue', statNumber: 5000000, color: 'white', isCurrency: true },
+  { text: 'Colaboratori', statNumber: 30, outlined: true, color: 'white' },
+  { text: 'Apartamente', statNumber: 150, color: 'white', isCurrency: true },
+  { text: 'Case', statNumber: 140, outlined: true, color: 'white', isCurrency: true },
+  { text: 'Clienti', statNumber: 250, color: 'white', isCurrency: true },
 ])
 
 // Add a reactive property for each stat to hold the animated value
@@ -52,7 +52,7 @@ onMounted(() => {
             :text="stat.text"
             :outlined="stat.outlined"
             :color="stat.color"
-            :stat-number="stat.isCurrency ? `$${stat.currentNumber.toLocaleString()}` : stat.currentNumber"
+            :stat-number="stat.isCurrency ? `${stat.currentNumber.toLocaleString()}+` : stat.currentNumber"
           />
         </v-col>
       </template>
