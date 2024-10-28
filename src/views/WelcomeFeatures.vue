@@ -60,6 +60,8 @@
         <v-col
           cols="12"
           md="3"
+          class="pa-3 bg-grey-lighten-1"
+
         >
           <Feature
             class="pa-3 bg-grey-lighten-2"

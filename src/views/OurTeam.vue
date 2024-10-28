@@ -77,7 +77,7 @@
           md="3"
           sm="6"
         >
-          <TeamMember v-bind="employee" />
+          <TeamMember class="bg-grey-lighten-1" v-bind="employee" />
         </v-col>
       </template>
     </v-row>

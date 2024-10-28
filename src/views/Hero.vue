@@ -53,7 +53,17 @@
                 >
                   <span v-text="`Contactează-ne`" />
                 </Btn>
-               
+                <Btn
+                  class="font-weight-bold text-none mr-4 mb-1"
+                  color="white"
+                  height="50px"
+                  href="https://store.vuetifyjs.com/products/flairo-theme-pro"
+                  target="_blank"
+                  variant="outlined"
+                  rounded
+                >
+                  <span v-text="`Despre Noi`" />
+                </Btn>
               </v-col>
               <v-col
                 cols="12"
