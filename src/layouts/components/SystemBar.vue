@@ -11,7 +11,7 @@
   <v-system-bar
     :height="60"
     :ripple="false"
-    color="#e6b004"
+    class="bg-black"
   >
     <v-btn
       :href="`tel:${appData.contact.phone.value}`"

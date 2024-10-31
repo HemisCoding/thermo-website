@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import { useAppData } from '@/stores/mockup'
   import thermoexpert from '@/assets/thermo-expert.png'
-  import BackgroundImg from '@/assets/background-website.jpg'
+  import BackgroundImg from '@/assets/homepage.jpg'
 
 
   

@@ -37,7 +37,7 @@
 
 <template>
   <v-app-bar
-    class="bg-offblack"
+    class="bg-black"
     :height="mdAndUp ? '100px' : '50px'" 
     scroll-behavior="elevate"
     style="right: 0;"
