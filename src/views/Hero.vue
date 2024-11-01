@@ -12,10 +12,10 @@
   <Section
     id="hero"
     space="0"
-    class="background-section"
   >
     <v-img
       :max-height="900"
+      :src="BackgroundImg"
       cover
     >
       <v-theme-provider>
@@ -84,7 +84,5 @@
 </template>
 
 <style lang="scss" scoped>
-.background-section {
-  background-color: #181818	;
-}
+
 </style>
