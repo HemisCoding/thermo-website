@@ -29,7 +29,7 @@
 
   const tabAttrs = computed(() => {
     const attrs : { height: string } = { height: '0px' }
-    if (props.block) attrs.height = '100px'
+    if (props.block) attrs.height = '80px'
     return attrs
   })
 
@@ -37,13 +37,13 @@
 
 <template>
   <v-app-bar
-    class="bg-black"
-    :height="mdAndUp ? '100px' : '50px'" 
+    class="bg-blue"
+    :height="mdAndUp ? '80px' : '40px'" 
     scroll-behavior="elevate"
     style="right: 0;"
   >
     <v-img
-      :max-width="mdAndUp ? '120px' : '80px'" 
+      :max-width="mdAndUp ? '100px' : '50px'" 
       :src="logothermo"
       class="hidden-sm-and-down"
       max-height="60px"
@@ -52,7 +52,7 @@
     <v-toolbar-title>
       <RouterLink
         :text="appData.title"
-        class="text-grey font-weight-bold text-h6"
+        class="text-white font-weight-bold text-h6"
         style="cursor: pointer; text-decoration: none;"
         to="/"
       />
@@ -70,9 +70,9 @@
           :exact="item.name === 'Home'"
           :ripple="false"
           :to="item.name === 'Home'? '/' : ('/' + item.name.toLowerCase())"
-          class="font-weight-medium text-grey"
-          min-width="100px"
-          selected-class="text-primary"
+          class="font-weight-medium text-white"
+          min-width="50px"
+          selected-class="text-white"
           variant="text"
         >
           {{ item.name }}
@@ -80,7 +80,7 @@
           <v-icon
             v-if="item.icon && mdAndUp"
             :icon="item.icon"
-            class="ms-2 text-grey"
+            class="ms-2 text-white"
             size="small"
             end
           />

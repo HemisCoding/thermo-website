@@ -12,6 +12,7 @@
   <Section
     id="hero"
     space="0"
+    class="background-img"
   >
     <v-img
       :max-height="900"
