@@ -1,38 +1,81 @@
-<script setup lang="ts">
-  import { useAppData } from '@/stores/mockup'
-
-  const appData = useAppData()
-</script>
-
 <template>
-  <Section
-    id="callout"
-    class="bg-yellow"
-  >
-    <div class="justify-center align-center text-center">
-      <Heading
-        align="center"
-        class="font-weight-bold"
-        space="0"
-        title="Varietate de Modele & Produse"
-      />
-      <Btn
-        class="mt-10 mb-2 elevation-0"
-        color="white text-primary"
-        href="https://store.vuetifyjs.com/products/flairo-theme-pro"
-        target="_blank"
-        variant="flat"
-        rounded
-      >
-        <span
-          class="font-weight-black text-none"
-          v-text="`Gama Noastra de Culori`"
-        />
-      </Btn>
-    </div>
-  </Section>
+  <v-container class="social-media-section" fluid>
+    <v-row justify="center" align="center">
+      <v-col cols="12" md="6" class="text-center">
+        <v-icon large color="white" class="social-icon">mdi-facebook</v-icon>
+        <h3 class="social-title">SOCIAL MEDIA</h3>
+        <v-divider class="divider mx-auto"></v-divider>
+        <p class="social-description">
+          Urmărește-ne pe Facebook pentru a rămâne la curent cu ultimele noutăți, promoții și evenimente.
+        </p>
+        <v-btn class="follow-btn" outlined color="white" href="https://facebook.com" target="_blank">
+          FOLLOW US
+          <v-icon right dark>mdi-open-in-new</v-icon>
+        </v-btn>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
-<style lang="scss" scoped>
+<script>
+import { defineComponent } from 'vue';
 
+export default defineComponent({
+  name: 'SocialMedia',
+});
+</script>
+
+<style scoped>
+.social-media-section {
+  background-color: #2c3e50;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.social-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.social-title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  margin: 0 auto 20px auto;
+}
+
+.social-description {
+  color: #e0e0e0;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.social-link {
+  display: block;
+  color: #42a5f5;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.follow-btn {
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.follow-btn:hover {
+  background-color: white;
+  color: #2c3e50;
+}
 </style>

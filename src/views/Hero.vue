@@ -33,7 +33,7 @@
               >
                 <Heading
                   :title="`De ce Noi?`"
-                  class="text-uppercase font-weight-bold"
+                  class="text-uppercase font-weight-bold text-blue"
                   color="white"
                 />
                 <Subheading
@@ -44,7 +44,7 @@
                   text="La Thermo Expert, oferim soluții personalizate pentru ferestre și uși de termopan, adaptate nevoilor fiecărui client. Fie că îți dorești izolare termică superioară, protecție fonică sau design modern, produsele noastre îți vor aduce confort și economii pe termen lung."
                 />
                 <Btn
-                  class="text-primary font-weight-bold text-none mr-4 mb-1"
+                  class="text-blue font-weight-bold text-none mr-4 mb-1"
                   color="white"
                   height="50px"
                   href="/contact"
@@ -69,11 +69,11 @@
                 cols="12"
                 md="6"
               >
-                <v-img
+                <!-- <v-img
                   :src="thermoexpert"
                   max-width="650px"
                   min-height="365px"
-                />
+                /> -->
               </v-col>
             </v-row>
           </v-responsive>

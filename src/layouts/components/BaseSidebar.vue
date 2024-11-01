@@ -31,13 +31,14 @@ watch(
 </script>
 
 <template>
-  <v-btn
-    icon
-    @click="drawer = !drawer">
-      <v-icon style="margin-right: 3vw;">
-        mdi-menu
-      </v-icon>
-  </v-btn>
+
+
+  <v-btn icon
+        @click="drawer = !drawer">
+        <v-icon style="margin-right: 3vw;">
+          mdi-menu
+        </v-icon>
+      </v-btn>
 
   <v-navigation-drawer
     v-model="drawer"

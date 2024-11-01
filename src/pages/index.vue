@@ -5,6 +5,8 @@
   import OurTeam from '@/views/OurTeam.vue'
   import StandoutCallout from '@/views/StandoutCallout.vue'
   import Info from '@/views/Info.vue'
+  import OurProduct from '@/views/OurProduct.vue'
+import OurServices from '@/views/OurServices.vue'
 
   interface Props {
     id?: string
@@ -21,10 +23,12 @@
     <v-row no-gutters>
       <v-col cols="12">
         <Hero />
+        <OurProduct />  
         <WelcomeFeatures />
-        <FlexibleCallout />
+        <OurServices />
         <OurTeam />
         <StandoutCallout />
+        <FlexibleCallout />
         <Info />
       </v-col>
     </v-row>

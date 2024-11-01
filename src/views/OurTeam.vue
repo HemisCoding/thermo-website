@@ -48,13 +48,13 @@
 <template>
   <Section
     id="our-team"
-    class="bg-grey-lighten-2"
+    class="background-section text-white"
 
   >
-    <div class="justify-center align-center">
+    <div class="justify-center align-center text-white">
       <Heading
         align="center"
-        class="font-weight-bold"
+        class="font-weight-bold text-white"
         title="Echipa Noastră"
       />
       <Divider
@@ -77,7 +77,7 @@
           md="3"
           sm="6"
         >
-          <TeamMember class="bg-grey-lighten-1" v-bind="employee" />
+          <TeamMember class="card" v-bind="employee" />
         </v-col>
       </template>
     </v-row>
@@ -85,5 +85,12 @@
 </template>
 
 <style lang="scss" scoped>
+.background-section {
+  background-color: #181818	;
+}
 
+.card {
+  border: 1px solid white;
+  border-radius: 3px;
+}
 </style>

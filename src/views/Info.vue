@@ -7,7 +7,7 @@
 </script>
 
 <template>
-  <Section class="bg-offblack">
+  <Section class="footer text-white">
     <v-row
       align="start"
       class="px-12"
@@ -140,5 +140,7 @@
 </template>
 
 <style lang="scss" scoped>
-
+.footer {
+  background-color: #181818		;
+}
 </style>

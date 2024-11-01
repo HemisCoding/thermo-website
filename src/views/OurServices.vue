@@ -4,12 +4,14 @@
       {
         icon: 'mdi-flash',
         title: 'Montaj Rapid',
+        avatarColor: 'offblack',
         text: 'Îți livrăm calitate și eficiență, cu un montaj rapid și profesional, astfel încât să te bucuri de noile ferestre sau uși cât mai repede.',
       },
       {
         icon: 'mdi-cog',
         outlined: true,
         title: 'Aranjare Completă',
+        avatarColor: 'offblack',
         text: 'Transformă-ți casa după gustul tău! Oferim soluții de personalizare adaptate stilului tău, fie că dorești finisaje moderne sau clasice.',
       },
       {
@@ -21,29 +23,32 @@
       },
       {
         icon: 'mdi-face-agent',
+        avatarColor: 'offblack',
         title: 'Suport Prietenos',
         text: 'Echipa noastră de suport e mereu la dispoziția ta pentru a răspunde întrebărilor și a oferi asistență înainte, în timpul și după instalare.',
       },
       {
         icon: 'mdi-auto-fix',
         title: 'Design de Impact',
-        avatarColor: '#0077b5',
+        avatarColor: 'offblack',
         outlined: true,
         text: 'Alegem cu grijă materialele și finisajele pentru un design care să impresioneze și să reziste în timp.',
       },
       {
         icon: 'mdi-calendar',
         title: 'Program Flexibil',
+        avatarColor: 'offblack',
         text: 'Ne adaptăm programul pentru a răspunde nevoilor tale și a facilita instalarea ferestrelor sau ușilor în cele mai convenabile momente.',
       },
       {
         icon: 'mdi-magnify',
         title: 'Optimizare Energetică',
-        avatarColor: '#0077b5',
+        avatarColor: 'offblack',
         text: 'Ferestrele și ușile noastre sunt gândite pentru a îmbunătăți eficiența energetică a locuinței tale, reducând costurile de încălzire și răcire.',
       },
       {
         icon: 'mdi-thought-bubble',
+        avatarColor: 'offblack',
         title: 'Consultanță Personalizată',
         text: 'Oferim sfaturi și recomandări pentru a alege produsele potrivite, astfel încât să obții exact ce ți-ai dorit, fără compromisuri.',
       },
@@ -54,7 +59,7 @@
 <template>
   <Section
     id="our-services"
-    space="16"
+    space="40"
   >
     <div class="justify-center align-center">
       <Heading
@@ -64,19 +69,18 @@
       />
       <Divider
         align="center"
-        color="primary"
+        color="blue"
       />
     </div>
     <v-row
       align="stretch"
-      class="px-3"
+      class="px-15"
       justify="center"
     >
       <template v-for="(feature, _i) in features" :key="_i">
         <v-col
-          cols="12"
-          lg="3"
-          md="6"
+          cols="10"
+          md="5"
         >
           <FeatureAlt
             class="pa-1"
