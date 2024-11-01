@@ -74,7 +74,7 @@
     </div>
     <v-row
       align="stretch"
-      class="px-15"
+      class="px-3"
       justify="center"
     >
       <template v-for="(feature, _i) in features" :key="_i">
