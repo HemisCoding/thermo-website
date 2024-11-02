@@ -53,7 +53,7 @@
               :skill="skill.name"
               :value="skill.value"
               class="px-3"
-              color="primary"
+              color="blue"
               rounded
             />
           </v-col>
@@ -108,7 +108,7 @@
           to="/"
         />
         <FeatureAlt
-          avatar-color="primary"
+          avatar-color="blue"
           icon="mdi-sync mdi-rotate-270"
           size="text-h6"
           text="Lorem ipsum dolor sit amet, consequam, adipiscingconmentum tristiidem nemo minima."

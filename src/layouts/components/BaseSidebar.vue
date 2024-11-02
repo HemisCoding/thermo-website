@@ -47,7 +47,7 @@ watch(
     style="height: 100vh;"
     fixed
     hide-overlay
-    class="bg-offblack"
+    class="bg-blue"
   >
   
     <v-list

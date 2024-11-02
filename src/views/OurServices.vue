@@ -6,6 +6,7 @@
         title: 'Montaj Rapid',
         avatarColor: 'offblack',
         text: 'Îți livrăm calitate și eficiență, cu un montaj rapid și profesional, astfel încât să te bucuri de noile ferestre sau uși cât mai repede.',
+        iconColor: 'blue',
       },
       {
         icon: 'mdi-cog',

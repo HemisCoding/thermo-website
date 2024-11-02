@@ -17,8 +17,8 @@
   <section :id="id" v-bind="$attrs">
     <v-row no-gutters>
       <v-col cols="12">
-        <MapPage />
         <GetInTouch />
+        <MapPage />
         <Info />
       </v-col>
     </v-row>

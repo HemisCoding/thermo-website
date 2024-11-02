@@ -4,11 +4,13 @@
   const appData = useAppData()
   const tab = ref('all')
   const tabs = ref([
-    { title: 'All Works', category: 'all' },
-    { title: 'Campfire', category: 'fire' },
-    { title: 'Mountain', category: 'mountain' },
-    { title: 'Daylight', category: 'day' },
-    { title: 'Overnight', category: 'night' },
+    { title: 'Toate', category: 'toate' },
+    { title: 'Rezidential', category: 'rezidential' },
+    { title: 'Usi', category: 'usi' },
+    { title: 'Garaje', category: 'garaje' },
+    { title: 'Foisoare', category: 'foisoare' },
+    { title: 'Altele', category: 'altele' },
+
   ])
   const visibleProjects = computed(() => {
     const projects = appData.projects.filter(project => {

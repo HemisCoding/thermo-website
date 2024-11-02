@@ -1,5 +1,7 @@
 <script setup lang="ts">
   import { useAppData } from '@/stores/mockup'
+  import FlexibleCallout from '@/views/FlexibleCallout.vue';
+
 
   const appData = useAppData()
   const reasons = ref<{
@@ -27,7 +29,7 @@
       <v-col
         class="px-3 pb-3"
         cols="12"
-        md="6"
+        md="3"
       >
         <Subheading
           title="De ce să ne alegi pe noi?"
@@ -52,26 +54,19 @@
       <v-col
         class="px-3 py-1"
         cols="12"
-        md="6"
+        md="9"
       >
-        <!-- <Subheading
-          class="primary--text"
-          title="Blog Posts"
-        />
-        <Divider align="left" />
-        <template v-for="(post, _i) in appData.blogPosts" :key="_i">
-          <Post :post="post" v-bind="post" />
-        </template> -->
-        <Btn
+        <FlexibleCallout />
+        <!-- <Btn
           class="my-10 elevation-0 mx-1"
           variant="flat"
           rounded
-        >
+        > 
           <span
             class="font-weight-black text-white"
             v-text="'Vezi Proiectele Noastre'"
           />
-        </Btn>
+        </Btn> -->
       </v-col>
     </v-row>
   </Section>

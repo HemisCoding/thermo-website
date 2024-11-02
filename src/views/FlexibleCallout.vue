@@ -22,9 +22,8 @@
         </v-btn>
         <v-btn class="vezi-portofoliu" outlined color="white">VEZI TOT PORTOFOLIUL</v-btn>
       </v-col>
-<!-- cycle :interval="3000" -->
       <v-col cols="12" md="9" class="carousel-section">
-        <v-carousel show-arrows height="400px">
+        <v-carousel show-arrows height="400px" cycle :interval="3000">
         <v-carousel-item
           v-for="(project, index) in projects"
           :key="index"
