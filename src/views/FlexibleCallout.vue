@@ -1,3 +1,4 @@
+
 <template>
   <v-container class="portfolio-showcase" fluid>
     <v-row>
@@ -19,23 +20,22 @@
         >
           {{ category }}
         </v-btn>
+        <v-btn class="vezi-portofoliu" outlined color="white">VEZI TOT PORTOFOLIUL</v-btn>
       </v-col>
-
-      <!-- Slider-ul de proiecte -->
+<!-- cycle :interval="3000" -->
       <v-col cols="12" md="9" class="carousel-section">
-        <v-slide-group show-arrows class="projects-slider">
-          <v-slide-item
-            v-for="(project, index) in projects"
-            :key="index"
-            class="project-slide"
-          >
-            <v-responsive class="project-card">
-              <v-img :src="project.image" class="project-image"></v-img>
-              <h4 class="project-title">{{ project.title }}</h4>
-              <p class="project-category">{{ project.category }}</p>
-            </v-responsive>
-          </v-slide-item>
-        </v-slide-group>
+        <v-carousel show-arrows height="400px">
+        <v-carousel-item
+          v-for="(project, index) in projects"
+          :key="index"
+        >
+          <v-responsive class="project-card">
+            <v-img :src="project.image" class="project-image"></v-img>
+            <h4 class="project-title">{{ project.title }}</h4>
+            <p class="project-category">{{ project.category }}</p>
+          </v-responsive>
+        </v-carousel-item>
+      </v-carousel>
       </v-col>
     </v-row>
 
@@ -57,23 +57,38 @@
 </template>
 
 <script>
+import casaModern1 from '@/assets/portofoliu/casa-moderna1.jpeg';
+import casaModern2 from '@/assets/portofoliu/casa-moderna2.jpeg';
+import casaModern3 from '@/assets/portofoliu/casa-moderna3.jpeg';
+import casaModern4 from '@/assets/portofoliu/casa-moderna4.jpeg';
+import casaModern5 from '@/assets/portofoliu/casa-moderna5.jpeg';
+import casaModern8 from '@/assets/portofoliu/casa-moderna8.jpeg';
+import garaj from '@/assets/portofoliu/garaj.jpeg';
+import foisor from '@/assets/portofoliu/foisor.jpeg';
+import showroom from '@/assets/portofoliu/showroom-thermo.jpeg';
+
+
+
 import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'PortfolioShowcase',
   data() {
     return {
-      categories: ['TOATE', 'DESIGN MODERN', 'CASE', 'APARTAMENTE', 'GARAJE', 'PHOTOGRAPHY', 'ECOMMERCE'],
+      categories: ['DESIGN MODERN', 'CASE', 'APARTAMENTE', 'GARAJE', 'FOISOARE', 'USI'],
       selectedCategory: 'ALL', // Categoria selectată implicit
       projects: [
-        { image: 'path-to-image1.jpg', title: 'CIERRA VEGA', category: 'Wordpress' },
-        { image: 'path-to-image2.jpg', title: 'PIERRE COX', category: 'Statistics' },
-        { image: 'path-to-image3.jpg', title: 'ALDEN CANTRELL', category: 'Wordpress' },
-        { image: 'path-to-image4.jpg', title: 'CRYSTAL MARTIN', category: 'Photography' },
-        { image: 'path-to-image5.jpg', title: 'JOHN DOE', category: 'Branding' },
-        { image: 'path-to-image6.jpg', title: 'JANE SMITH', category: 'Ecommerce' },
-        // Adaugă mai multe proiecte după nevoie
-      ]
+        { image: casaModern1, title: 'DESIGN MODERN', category: 'lore' },
+        { image: showroom, title: 'SHOW ROOM', category: 'lore' },
+        { image: casaModern2, title: 'DESIGN MODERN', category: 'Statistics' },
+        { image: garaj, title: 'GARAJ', category: 'Statistics' },
+        { image: casaModern3, title: 'DESIGN MODERN', category: 'Wordpress' },
+        { image: foisor, title: 'FOISOR', category: 'Photography' },
+        { image: casaModern5, title: 'DESIGN MODERN', category: 'Branding' },
+        { image: casaModern4, title: 'DESIGN MODERN', category: 'Branding' },
+        { image: casaModern8, title: 'DESIGN MODERN', category: 'Branding' },
+      ],
+      currentSlide: 0, // Slide-ul curent
     };
   },
   methods: {
@@ -121,7 +136,7 @@ export default defineComponent({
   border-radius: 4px;
   margin-top: 10px;
   text-transform: uppercase;
-  width: 60%;
+  width: 100%;
   background-color: transparent;
   font-weight: bold;
 }
@@ -152,15 +167,16 @@ export default defineComponent({
 }
 
 .project-card {
+  border: 1px solid #263e56;
   text-align: center;
   color: #1a2b3c;
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 20px;
   border-radius: 8px;
 }
 
 .project-image {
-  height: 200px;
+  max-height: 23vh;
   width: 100%;
   border-radius: 8px;
 }
@@ -203,6 +219,16 @@ export default defineComponent({
   margin-top: 10px;
   text-transform: uppercase;
   width: 50%;
+  background-color: transparent !important;
+}
+
+.vezi-portofoliu {
+  border: 1px solid #b0bec5;
+  color: white !important;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  width: 100%;
   background-color: transparent !important;
 }
 

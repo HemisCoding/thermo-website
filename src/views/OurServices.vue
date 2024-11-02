@@ -64,8 +64,8 @@
     <div class="justify-center align-center">
       <Heading
         align="center"
-        class="font-weight-bold"
-        title="Serviciile Noastre"
+        class="font-weight title"
+        title="SERVICIILE NOASTRE"
       />
       <Divider
         align="center"
@@ -93,5 +93,7 @@
 </template>
 
 <style lang="scss" scoped>
-
+.title {
+  font-family: 'Poppins', sans-serif;
+}
 </style>

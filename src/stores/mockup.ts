@@ -20,40 +20,40 @@ export const useAppData = defineStore('appData', () => {
       link: 'https://instagram.com',
       color: '#EF0075',
     },
-    {
-      name: 'Twitter',
-      icon: 'mdi-twitter',
-      link: 'https://twitter.com',
-      color: '#1A91DA',
-    },
-    {
-      name: 'Soundcloud',
-      icon: 'mdi-soundcloud',
-      link: 'https://soundcloud.com',
-      color: '#FF5501',
-    },
-    {
-      name: 'Twitch',
-      icon: 'mdi-twitch',
-      link: 'https://twitch.tv',
-      color: '#9147FF',
-    },
-    {
-      name: 'Youtube',
-      icon: 'mdi-youtube',
-      link: 'https://youtube.com',
-      color: '#FE0200',
-    },
-    {
-      name: 'LinkedIn',
-      icon: 'mdi-linkedin',
-      link: 'https://linkedin.com',
-      color: '#0077B5',
-    },
+    // {
+    //   name: 'Twitter',
+    //   icon: 'mdi-twitter',
+    //   link: 'https://twitter.com',
+    //   color: '#1A91DA',
+    // },
+    // {
+    //   name: 'Soundcloud',
+    //   icon: 'mdi-soundcloud',
+    //   link: 'https://soundcloud.com',
+    //   color: '#FF5501',
+    // },
+    // {
+    //   name: 'Twitch',
+    //   icon: 'mdi-twitch',
+    //   link: 'https://twitch.tv',
+    //   color: '#9147FF',
+    // },
+    // {
+    //   name: 'Youtube',
+    //   icon: 'mdi-youtube',
+    //   link: 'https://youtube.com',
+    //   color: '#FE0200',
+    // },
+    // {
+    //   name: 'LinkedIn',
+    //   icon: 'mdi-linkedin',
+    //   link: 'https://linkedin.com',
+    //   color: '#0077B5',
+    // },
   ])
   const contact = ref({
-    phone: { value: '+40 7xx xxx xxx', icon: 'mdi-phone' },
-    email: { value: 'mail@thermo-expert.com', icon: 'mdi-email' },
+    phone: { value: '+40 748 905 981', icon: 'mdi-phone' },
+    email: { value: 'thermoexpertsolution@yahoo.com', icon: 'mdi-email' },
   })
   const recentNews = ref([
     'Lorem ipsum dolor sit amet, consectetur.',

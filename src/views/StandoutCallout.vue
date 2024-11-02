@@ -9,7 +9,7 @@
           Urmărește-ne pe Facebook pentru a rămâne la curent cu ultimele noutăți, promoții și evenimente.
         </p>
         <v-btn class="follow-btn" outlined color="white" href="https://facebook.com" target="_blank">
-          FOLLOW US
+          URMĂREȘTE-NE
           <v-icon right dark>mdi-open-in-new</v-icon>
         </v-btn>
       </v-col>

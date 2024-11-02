@@ -54,12 +54,12 @@
     <div class="justify-center align-center text-white">
       <Heading
         align="center"
-        class="font-weight-bold text-white"
-        title="Echipa Noastră"
+        class="font-weight-bold text-blue title"
+        title="ECHIPA NOASTRĂ"
       />
       <Divider
         align="center"
-        color="primary"
+        color="blue"
       />
       <Body
         align="center"
@@ -92,5 +92,9 @@
 .card {
   border: 1px solid white;
   border-radius: 3px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
 }
 </style>

@@ -27,61 +27,6 @@
         <Body text="Thermo Expert este un lider pe piața soluțiilor de ferestre și uși de termopan, cu peste 10 ani de experiență în domeniu. Ne concentrăm pe oferirea celor mai eficiente soluții pentru izolare termică și fonică, cu un design modern și durabil. Fiecare proiect este tratat cu profesionalism și atenție la detalii, pentru a asigura satisfacția fiecărui client." />
         <Body text="Alege-ne pentru calitate superioară, eficiență și servicii personalizate, adaptate nevoilor tale." />
       </v-col>
-      <!-- <v-col
-        v-if="mdAndUp"
-        class="px-3"
-        cols="3"
-      >
-        <Subheading color="white" title="Recent News" />
-        <Divider
-          align="left"
-          color="white"
-        />
-        <template v-for="(news, _i) in appData.recentNews" :key="`news-text-${_i}`">
-          <Body
-            :text="news"
-            class="py-3"
-            space="0"
-            tag="div"
-          />
-          <v-divider />
-        </template>
-      </v-col> -->
-      <!-- <v-col
-        v-if="mdAndUp"
-        class="px-3"
-        cols="3"
-      >
-        <Subheading color="white" title="Recent Posts" />
-        <Divider
-          align="left"
-          color="white"
-        />
-        <template v-for="(post, i) in appData.recentPosts" :key="`post-row-${i}`">
-          <div class="d-flex">
-            <div>
-              <Avatar
-                v-if="mdAndUp"
-                :key="`post-date-${i}`"
-                :text="post.date"
-                class="ma-2"
-                color="primary"
-                size="60"
-                outlined
-              />
-            </div>
-
-            <Body
-              :key="`post-text-${i}`"
-              :text="post.text"
-              class="py-3"
-              space="0"
-              tag="span"
-            />
-          </div>
-          <v-divider max-width="100%" />
-        </template>
-      </v-col> -->
       <v-col
       class="px-3"
         cols="12"
@@ -103,14 +48,14 @@
         />
         <Body
           space="2"
-          text="+40 7xx xxx xxx"
+          text='+40 748 905 981'
         />
         <Subtitle
           title="Email:"
           weight="bold"
         />
         <Body
-          :text="`email@${appData.title.toLowerCase()}.com`"
+          :text="'thermoexpertsolution@yahoo.com'"
           space="2"
         />
         <Subtitle

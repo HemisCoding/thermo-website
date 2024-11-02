@@ -1,7 +1,8 @@
 <script setup lang="ts">
   import { useAppData } from '@/stores/mockup'
-  import thermoexpert from '@/assets/thermo-expert.png'
-  import BackgroundImg from '@/assets/homepage.jpg'
+  import thermoexpert from '@/assets/logo-thermo.png'
+  // import BackgroundImg from '@/assets/homepage.jpg'
+  import BackgroundImg from '@/assets/thermo-wallpaper.svg'
 
 
   
@@ -20,7 +21,7 @@
       cover
     >
       <v-theme-provider>
-        <v-container class="fill-height px-5 py-12">
+        <v-container class="fill-height px-5 py-6">
           <v-responsive
             class="d-flex align-center justify-center"
             height="100%"
@@ -70,11 +71,11 @@
                 cols="12"
                 md="6"
               >
-                <!-- <v-img
+                <v-img
                   :src="thermoexpert"
                   max-width="650px"
                   min-height="365px"
-                /> -->
+                />
               </v-col>
             </v-row>
           </v-responsive>

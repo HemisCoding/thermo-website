@@ -1,112 +1,10 @@
-<!-- <script setup lang="ts">
-  import { useAppData } from '@/stores/mockup'
-
-  const appData = useAppData()
-  const features = ref<{
-    icon: string,
-    title: string,
-    text: string
-  }[]>([
-    {
-      icon: 'mdi-flash',
-      title: 'Rapiditate',
-      text: 'Instalăm rapid și eficient, cu minim de disconfort pentru tine.',
-    },
-    {
-      icon: 'mdi-cog',
-      title: 'Izolare Termică de Top',
-      text: 'Reducem costurile de energie prin tehnologii avansate de izolare.',
-    },
-    {
-      icon: 'mdi-responsive',
-      title: 'Durabilitate Garantată',
-      text: 'Materiale de înaltă calitate care asigură o durată de viață îndelungată.',
-    },
-    {
-      icon: 'mdi-face-agent',
-      title: 'Estetică Modernă',
-      text: 'Ferestre și uși care îmbină funcționalitatea cu un design contemporan.',
-    },
-  ])
-</script>
 <template>
-  <Section
-    id="welcome-feature"
-    class="gradient-background"
-  >
-    <div class="justify-center align-center text-white">
-      <Heading
-        :title="`Bine ai venit la ${appData.title}`"
-        align="center"
-        class="font-weight-bold text-white"
-      />
-      <Divider
-        align="center"
-        color="primary"
-      />
-      <Body
-        align="center"
-        text="Alege-ne pentru confort și siguranță la superlativ."
-      />
-    </div>
-    <v-row
-      align="center"
-      class="px-4"
-      justify="center"
-    >
-      <template v-for="(feature, _i) in features" :key="_i">
-        <v-col
-          cols="12"
-          sm="6" 
-          md="3" 
-          class="pa-2" 
-        >
-          <v-card
-            class="d-flex flex-column align-center justify-center"
-            color="white"
-            elevation="3" 
-            hover
-            outlined
-          >
-            <Feature
-              class="card-design pa-3"
-              v-bind="feature"
-            />
-          </v-card>
-        </v-col>
-      </template>
-    </v-row>
-  </Section>
-</template>
-
-<style lang="scss" scoped>
-.gradient-background {
-  background-color: #403d3d;
-}
-
-.card-design {
-  background-color: #403d3d !important;
-}
-</style>
-
-
-<style lang="scss" scoped>
-.gradient-background {
-  background-color: #403d3d;
-}
-
-.card-design {
-  background-color: #403d3d !important;
-}
-</style>
- -->
- <template>
   <v-container class="services-container" fluid>
     <v-row class="text-center" justify="center">
       <v-col cols="12" md="3" v-for="(service, index) in services" :key="index">
         <v-icon large class="service-icon">{{ service.icon }}</v-icon>
         <h4 class="service-title">{{ service.title }}</h4>
-        <v-divider class="divider mx-auto"></v-divider>
+        <div class="divider mx-auto"></div>
         <p class="service-description">{{ service.description }}</p>
       </v-col>
     </v-row>
@@ -157,6 +55,8 @@ export default defineComponent({
 .service-icon {
   color: #1e88e5; /* Albastru pentru icon */
   margin-bottom: 10px;
+  font-size: 48px; /* Ajustează dimensiunea după preferință */
+
 }
 
 .service-title {
@@ -167,9 +67,9 @@ export default defineComponent({
 }
 
 .divider {
-  width: 40px;
-  height: 5px;
-  background-color: #1434A4	; /* Albastru pentru subliniere */
+  width: 1.5vw;
+  height: 0.1vh;
+  background-color: #1e88e5	; /* Albastru pentru subliniere */
 }
 
 .service-description {
