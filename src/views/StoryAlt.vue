@@ -44,27 +44,14 @@
           text="La Thermo-Expert, valorile noastre definesc fiecare fereastră montată și fiecare proiect finalizat. Credem în calitate fără compromisuri, dedicare și încredere reciprocă cu fiecare client. Ne asigurăm că soluțiile oferite nu doar îmbunătățesc confortul locuinței, ci și durabilitatea acesteia. Suntem pasionați de inovație și de a aduce mereu cele mai bune produse și servicii pentru casa ta. În fiecare proiect, de la mic la mare, ne ghidăm după aceleași principii: profesionalism, transparență și un angajament profund față de satisfacția clientului. Thermo-Expert – pentru o locuință sigură, confortabilă și de încredere!"
         />
         <Btn
-          class="my-10 elevation-0 mx-1"
-          color="black"
-          href="https://store.vuetifyjs.com/products/flairo-theme-pro"
-          target="_blank"
-          theme="dark"
-          variant="flat"
-          rounded
-        >
-          <span
-            class="font-weight-black text-none"
-            v-text="`Contacteaza-ne`"
-          />
-        </Btn>
-        <Btn
-          class="my-10 elevation-0 mx-1"
+          class="elevation-0 mx-1"
           depressed
           rounded
+          color="blue"
         >
           <span
             class="font-weight-black text-white"
-            v-text="'Vezi Serviciile Oferite'"
+            v-text="'VEZI PORTOFOLIUL NOSTRU'"
           />
         </Btn>
       </v-col>

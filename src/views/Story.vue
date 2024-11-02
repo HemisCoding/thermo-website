@@ -11,7 +11,7 @@
 <template>
   <Section
     id="story"
-    class="white pa-6"
+    class="section-background pa-6"
     space="4"
   >
     <v-row
@@ -19,13 +19,13 @@
       justify="center"
     >
       <v-col
-        class="px-10"
+        class="px-10 text-white"
         cols="12"
         md="6"
       >
         <Heading
           align="left"
-          class="font-weight-bold py-3"
+          class="font-weight-bold py-3 title text-blue"
           title="Cine suntem noi?"
         />
         <Body
@@ -33,8 +33,8 @@
           text="Thermo-Expert, fondată în 2017 în inima Oneștiului, este mai mult decât o firmă de termopane – suntem partenerii tăi de încredere în crearea spațiului perfect. Cu sute de proiecte finalizate cu succes atât în România, cât și în afara țării, am câștigat recunoașterea prin profesionalism, inovație și dedicare pentru excelență. De la ferestre durabile până la uși personalizate, fiecare detaliu reflectă angajamentul nostru față de calitate. Alege Thermo-Expert și transformă-ți locuința într-un loc mai cald, mai luminos și mai sigur!"
         />
         <Btn
-          class="my-10 elevation-0 mx-1"
-          color="black"
+          class="my-5 elevation-0 mx-1 btn-contact"
+          color="blue"
           href="https://store.vuetifyjs.com/products/flairo-theme-pro"
           target="_blank"
           theme="dark"
@@ -42,18 +42,8 @@
           rounded
         >
           <span
-            class="font-weight-black text-none"
-            v-text="`Contactează-ne`"
-          />
-        </Btn>
-        <Btn
-          class="my-10 elevation-0 mx-1"
-          variant="flat"
-          rounded
-        >
-          <span
             class="font-weight-black text-white"
-            v-text="'Vezi Proiectele Noastre'"
+            v-text="`Contactează-ne`"
           />
         </Btn>
       </v-col>
@@ -74,5 +64,12 @@
 </template>
 
 <style lang="scss" scoped>
+.section-background {
+  background-color: #0d1b2a; /* Fundal întunecat */
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+}
 
 </style>

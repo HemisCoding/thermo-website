@@ -43,7 +43,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <Section id="stats" class="bg-primary">
+  <Section id="stats" class="stats-container">
     <v-row align="center" class="px-10" justify="center">
       <template v-for="(stat, _i) in animatedStats" :key="_i">
         <v-col class="text-center" cols="12" md="3" sm="6">
@@ -59,3 +59,13 @@ onMounted(() => {
     </v-row>
   </Section>
 </template>
+
+<style>
+.stats-container {
+  background-color: #1a2b3c;}
+
+.stats-container .text-center {
+  color: white !important;
+}
+
+</style>
