@@ -35,7 +35,7 @@
         <Btn
           class="my-5 elevation-0 mx-1 btn-contact"
           color="blue"
-          href="https://store.vuetifyjs.com/products/flairo-theme-pro"
+          href="/contact"
           target="_blank"
           theme="dark"
           variant="flat"

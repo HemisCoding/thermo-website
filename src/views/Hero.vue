@@ -59,7 +59,7 @@
                   class="font-weight-bold text-none mr-4 mb-1"
                   color="white"
                   height="50px"
-                  href="https://store.vuetifyjs.com/products/flairo-theme-pro"
+                  href="/about"
                   target="_blank"
                   variant="outlined"
                   rounded

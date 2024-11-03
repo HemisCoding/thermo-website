@@ -44,6 +44,7 @@
           text="La Thermo-Expert, valorile noastre definesc fiecare fereastră montată și fiecare proiect finalizat. Credem în calitate fără compromisuri, dedicare și încredere reciprocă cu fiecare client. Ne asigurăm că soluțiile oferite nu doar îmbunătățesc confortul locuinței, ci și durabilitatea acesteia. Suntem pasionați de inovație și de a aduce mereu cele mai bune produse și servicii pentru casa ta. În fiecare proiect, de la mic la mare, ne ghidăm după aceleași principii: profesionalism, transparență și un angajament profund față de satisfacția clientului. Thermo-Expert – pentru o locuință sigură, confortabilă și de încredere!"
         />
         <Btn
+          href="/portfolio"
           class="elevation-0 mx-1"
           depressed
           rounded
