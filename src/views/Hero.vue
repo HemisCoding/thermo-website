@@ -35,18 +35,20 @@
               >
                 <Heading
                   :title="`De ce Noi?`"
-                  class="text-uppercase font-weight-bold text-blue"
+                  class="text-uppercase font-weight-bold text-blue text-animated"
                   color="white"
                 />
                 <Subheading
+                 class="text-animated"
                   color="white"
                   title="Calitate, Durabilitate & Eficiență Energetică"
                 />
                 <Body
+                  class="text-animated"
                   text="La Thermo Expert, oferim soluții personalizate pentru ferestre și uși de termopan, adaptate nevoilor fiecărui client. Fie că îți dorești izolare termică superioară, protecție fonică sau design modern, produsele noastre îți vor aduce confort și economii pe termen lung."
                 />
                 <Btn
-                  class="text-blue font-weight-bold text-none mr-4 mb-1"
+                  class="text-blue font-weight-bold text-none mr-4 mb-1 text-animated"
                   color="white"
                   height="50px"
                   href="/contact"
@@ -56,7 +58,7 @@
                   <span v-text="`Contactează-ne`" />
                 </Btn>
                 <Btn
-                  class="font-weight-bold text-none mr-4 mb-1"
+                  class="font-weight-bold text-none mr-4 mb-1 text-animated"
                   color="white"
                   height="50px"
                   href="/about"
@@ -72,6 +74,7 @@
                 md="6"
               >
                 <v-img
+                class="img-animated"
                   :src="thermoexpert"
                   max-width="650px"
                   min-height="365px"
@@ -86,5 +89,33 @@
 </template>
 
 <style lang="scss" scoped>
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
+.text-animated {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.img-animated {
+  animation: slideInFromRight 1s ease-out forwards;
+}
 </style>
