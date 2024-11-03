@@ -3,7 +3,7 @@
     <v-row justify="center">
       <!-- Left Section: Contact Information -->
       <v-col cols="12" md="5">
-        <h5 class="section-title text-white">TE ASTEPTAM LA O DISCUTIE</h5>
+        <h5 class="section-title text-white">TE AȘTEPTĂM LA O DISCUȚIE</h5>
         <p class="section-description text-white">
           Thermo Expert este un lider pe piața soluțiilor de ferestre și uși de termopan, cu peste 10 ani de experiență în domeniu. Ne concentrăm pe oferirea celor mai eficiente soluții pentru izolare termică și fonică, cu un design modern și durabil. Fiecare proiect este tratat cu profesionalism și atenție la detalii, pentru a asigura satisfacția fiecărui client.
         </p>
@@ -40,13 +40,13 @@
 
       <!-- Right Section: Contact Form -->
       <v-col cols="12" md="5">
-        <h5 class="section-title text-white">LASA-NE UN MAIL</h5>
-        <v-form class="text-white">
-          <v-text-field label="Nume" outlined></v-text-field>
-          <v-text-field label="Email" outlined></v-text-field>
-          <v-text-field label="Subiect" outlined></v-text-field>
-          <v-textarea label="Descriere" outlined></v-textarea>
-          <v-btn outlined color="blue" class="send-message-btn">TRIMITE MESAJ</v-btn>
+        <h5 class="section-title text-white">LASĂ-NE UN MAIL</h5>
+        <v-form class="text-white" @submit.prevent="sendEmail">
+          <v-text-field label="Nume" v-model="name" outlined></v-text-field>
+          <v-text-field label="Email" v-model="email" outlined></v-text-field>
+          <v-text-field label="Subiect" v-model="subject" outlined></v-text-field>
+          <v-textarea label="Descriere" v-model="message" outlined></v-textarea>
+          <v-btn outlined color="blue" class="send-message-btn" type="submit">TRIMITE MESAJ</v-btn>
         </v-form>
       </v-col>
     </v-row>
@@ -54,8 +54,46 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com';
+
 export default {
   name: 'ContactPage',
+  data() {
+    return {
+      name: '',
+      email: '',
+      subject: '',
+      message: '',
+    };
+  },
+  methods: {
+    sendEmail() {
+      const serviceID = 'service_dw5ud9q'; // ID-ul serviciului din EmailJS
+      const templateID = 'template_e5r9o79'; // Înlocuiește cu template ID-ul tău
+      const userID = 'IirmOlWusQR8pxBwy'; // Cheia publică din EmailJS
+
+      const templateParams = {
+        name: this.name,
+        email: this.email,
+        subject: this.subject,
+        message: this.message,
+      };
+
+      emailjs.send(serviceID, templateID, templateParams, userID)
+        .then(() => {
+          alert('Mesajul a fost trimis cu succes!');
+          this.resetForm();
+        }, (error) => {
+          alert('A apărut o eroare: ' + error.text);
+        });
+    },
+    resetForm() {
+      this.name = '';
+      this.email = '';
+      this.subject = '';
+      this.message = '';
+    }
+  }
 };
 </script>
 

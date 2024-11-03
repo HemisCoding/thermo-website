@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+import showroomImage from '@/assets/portofoliu/showroom-thermo.jpeg';
 
 const getImgUrl = (imagePath: string) =>
   new URL(`${imagePath}`, import.meta.url).href
@@ -151,7 +152,9 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 9,
-      src: getImgUrl('../assets/portofoliu/showroom-thermo.jpeg'),
+      // src: getImgUrl('../assets/portofoliu/showroom-thermo.jpeg'),
+      // src: require('@/assets/portofoliu/showroom-thermo.jpeg'),
+      src: showroomImage,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
