@@ -3,6 +3,8 @@
   import GetInTouch from '@/views/GetInTouch.vue'
   import Info from '@/views/Info.vue'
 
+  
+
   interface Props {
     id?: string
   }
@@ -10,6 +12,8 @@
   withDefaults(defineProps<Props>(), {
     id: 'contact',
   })
+
+  
 
 </script>
 
@@ -25,3 +29,4 @@
   </section>
 
 </template>
+
