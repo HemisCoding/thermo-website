@@ -11,7 +11,7 @@ export const useAppData = defineStore('appData', () => {
     {
       name: 'Facebook',
       icon: 'mdi-facebook',
-      link: 'https://facebook.com',
+      link: 'https://www.facebook.com/p/Thermo-Expert-One%C5%9Fti-100063611289322/?locale=ro_RO',
       color: '#0F98F6',
     },
     {

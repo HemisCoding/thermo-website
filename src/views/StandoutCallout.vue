@@ -8,7 +8,7 @@
         <p class="social-description">
           Urmărește-ne pe Facebook pentru a rămâne la curent cu ultimele noutăți, promoții și evenimente.
         </p>
-        <v-btn class="follow-btn" outlined color="white" href="https://facebook.com" target="_blank">
+        <v-btn class="follow-btn" outlined color="white" href="https://www.facebook.com/p/Thermo-Expert-One%C5%9Fti-100063611289322/?locale=ro_RO" target="_blank">
           URMĂREȘTE-NE
           <v-icon right dark>mdi-open-in-new</v-icon>
         </v-btn>
