@@ -1,6 +1,5 @@
 <script setup lang="ts">
   import OurServices from '@/views/OurServices.vue'
-  import WhyChooseUs from '@/views/WhyChooseUs.vue'
   import FlexibleCallout from '@/views/FlexibleCallout.vue';
   import Info from '@/views/Info.vue'
 

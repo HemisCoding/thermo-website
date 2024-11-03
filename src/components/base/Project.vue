@@ -3,12 +3,8 @@ import { defineProps, defineEmits } from 'vue';
 
 interface Props {
   id: string | number;
-  title: string;
-  subtitle: string;
   src: string;
   date: string;
-  description: string;
-  tags: string[];
   category: string;
 }
 
@@ -52,14 +48,6 @@ const props = defineProps<Props>();
               size="40"
             />
           </v-btn>
-          <div
-            class="font-weight-black mb-2"
-            v-text="props.title"
-          />
-          <div
-            class="mb-2"
-            v-text="props.subtitle"
-          />
         </v-overlay>
       </v-img>
     </v-card>

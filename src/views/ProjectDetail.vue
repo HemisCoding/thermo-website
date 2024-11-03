@@ -38,13 +38,7 @@
         md="6"
       >
         <Heading
-          :title="activeProject?.title"
-          align="left"
-          class="font-weight-bold"
-        />
-        <Subheading
-          :title="activeProject?.subtitle"
-        />
+
         <Subtitle
           title="Date"
           weight="bold"
@@ -57,19 +51,12 @@
           title="Description"
           weight="bold"
         />
-        <Body
-          :text="activeProject?.description"
-          space="3"
-        />
+
         <Subtitle
           title="Tags"
           weight="bold"
         />
-        <template v-for="(tag, _i) in activeProject?.tags" :key="_i">
-          <Tag
-            :text="tag"
-          />
-        </template>
+
         <div />
         <Btn
           class="mt-10 elevation-0 mx-1"

@@ -37,7 +37,6 @@
           md="4"
           sm="6"
         >
-          <Project v-bind="project" />
         </v-col>
       </template>
     </v-row>

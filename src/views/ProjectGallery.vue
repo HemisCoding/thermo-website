@@ -2,7 +2,7 @@
   import { useAppData } from '@/stores/mockup'
 
   const appData = useAppData()
-  const tab = ref('all')
+  const tab = ref('toate')
   const tabs = ref([
     { title: 'Toate', category: 'toate' },
     { title: 'Rezidential', category: 'rezidential' },
@@ -15,7 +15,7 @@
   const visibleProjects = computed(() => {
     const projects = appData.projects.filter(project => {
       if (typeof tab.value === 'number' && (tab.value === 0 || project.category.toLowerCase() === tabs.value[tab.value].category.toLowerCase())) return true
-      if (typeof tab.value === 'string' && (tab.value.toLowerCase() === 'all' || project.category.toLowerCase() === tab.value.toLowerCase())) return true
+      if (typeof tab.value === 'string' && (tab.value.toLowerCase() === 'toate' || project.category.toLowerCase() === tab.value.toLowerCase())) return true
 
       return false
     })
