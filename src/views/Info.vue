@@ -26,6 +26,8 @@
         />
         <Body text="Thermo Expert este un lider pe piața soluțiilor de ferestre și uși de termopan, cu peste 10 ani de experiență în domeniu. Ne concentrăm pe oferirea celor mai eficiente soluții pentru izolare termică și fonică, cu un design modern și durabil. Fiecare proiect este tratat cu profesionalism și atenție la detalii, pentru a asigura satisfacția fiecărui client." />
         <Body text="Alege-ne pentru calitate superioară, eficiență și servicii personalizate, adaptate nevoilor tale." />
+        <a href="/GdprPolicy" color="blue">Politica de Confidențialitate</a>
+
       </v-col>
       <v-col
       class="px-3"
