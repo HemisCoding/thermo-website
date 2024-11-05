@@ -13,6 +13,22 @@ import foisor1 from '@/assets/portofoliu/foisor.jpeg'
 import usa1 from '@/assets/portofoliu/usa.jpeg'
 import usaglisanta1 from '@/assets/portofoliu/usa-glisanta.jpeg'
 import garaj1 from '@/assets/portofoliu/garaj.jpeg'
+import usa2 from '@/assets/portofoliu/usa2.jpeg'
+import usa3 from '@/assets/portofoliu/usa3.jpeg'
+import usa4 from '@/assets/portofoliu/usa4.jpeg'
+import usa5 from '@/assets/portofoliu/usa5.jpeg'
+import usa6 from '@/assets/portofoliu/usa6.jpeg'
+import usa7 from '@/assets/portofoliu/usa7.jpeg'
+import usa8 from '@/assets/portofoliu/usa8.jpeg'
+import usa10 from '@/assets/portofoliu/usa10.jpeg'
+import casaModerna10 from '@/assets/portofoliu/casaModerna10.jpeg';
+import casaModerna11 from '@/assets/portofoliu/casaModerna11.jpeg';
+import casaModerna13 from '@/assets/portofoliu/casaModerna13.jpeg';
+import garaj2 from '@/assets/portofoliu/garaj2.jpeg';
+import garaj3 from '@/assets/portofoliu/garaj3.jpeg';
+import rolete1 from '@/assets/portofoliu/rolete1.jpeg';
+import rolete2 from '@/assets/portofoliu/rolete2.jpeg';
+import rolete3 from '@/assets/portofoliu/rolete3.jpeg';
 
 
 
@@ -176,7 +192,7 @@ export const useAppData = defineStore('appData', () => {
         day: 'numeric',
         year: 'numeric',
       }),
-      category: 'altele',
+      category: 'rezidential',
     },
     {
       id: 10,
@@ -186,7 +202,7 @@ export const useAppData = defineStore('appData', () => {
         day: 'numeric',
         year: 'numeric',
       }),
-      category: 'foisoare',
+      category: 'showroom',
     },
     {
       id: 11,
@@ -196,7 +212,7 @@ export const useAppData = defineStore('appData', () => {
         day: 'numeric',
         year: 'numeric',
       }),
-      category: 'usi',
+      category: 'garaje',
     },
     {
       id: 12,
@@ -206,7 +222,7 @@ export const useAppData = defineStore('appData', () => {
         day: 'numeric',
         year: 'numeric',
       }),
-      category: 'usi',
+      category: 'foisoare',
     },
     {
       id: 13,
@@ -216,7 +232,7 @@ export const useAppData = defineStore('appData', () => {
         day: 'numeric',
         year: 'numeric',
       }),
-      category: 'garaje',
+      category: 'usi',
     },
     {
       id: 14,
@@ -226,9 +242,168 @@ export const useAppData = defineStore('appData', () => {
         day: 'numeric',
         year: 'numeric',
       }),
+      category: 'usi',
+    },
+    {
+      id: 15,
+      src: usa2,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'usi',
+    },
+    {
+      id: 16,
+      src: usa3,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'usi',
+    }, 
+    {
+      id: 17,
+      src: usa4,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'usi',
+    }, 
+    {
+      id: 18,
+      src: usa5,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'usi',
+    }, 
+    {
+      id: 19,
+      src: usa6,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'usi',
+    }, 
+    {
+      id: 20,
+      src: usa7,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'usi',
+    }, 
+    {
+      id: 21,
+      src: usa8,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'usi',
+    }, 
+    {
+      id: 22,
+      src: usa10,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'usi',
+    }, 
+    {
+      id: 23,
+      src: casaModerna10,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'rezidential',
+    },
+    {
+      id: 24,
+      src: casaModerna11,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'rezidential',
+    },
+    {
+      id: 25,
+      src: casaModerna13,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'rezidential',
+    },
+    {
+      id: 27,
+      src: garaj2,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
       category: 'garaje',
     },
-
+    {
+      id: 28,
+      src: garaj3,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'garaje',
+    },
+    {
+      id: 29,
+      src: rolete3,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'jaluzele',
+    },
+    {
+      id: 30,
+      src: rolete2,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'jaluzele',
+    },
+    {
+      id: 31,
+      src: rolete1,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'jaluzele',
+    },
   ])
   const instagramPosts = ref([
     {

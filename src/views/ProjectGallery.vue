@@ -9,7 +9,8 @@
     { title: 'Usi', category: 'usi' },
     { title: 'Garaje', category: 'garaje' },
     { title: 'Foisoare', category: 'foisoare' },
-    { title: 'Altele', category: 'altele' },
+    { title: 'Jaluzele', category: 'jaluzele' },
+    { title: 'Show Room', category: 'showroom' },
 
   ])
   const visibleProjects = computed(() => {
