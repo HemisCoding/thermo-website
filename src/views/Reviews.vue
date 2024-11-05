@@ -68,13 +68,7 @@
   // Indexul recenziei curente
   const currentReview = ref(0)
   
-  // Funcțiile pentru navigare
-  const prevReview = () => {
-    currentReview.value = (currentReview.value - 1 + reviews.value.length) % reviews.value.length
-  }
-  const nextReview = () => {
-    currentReview.value = (currentReview.value + 1) % reviews.value.length
-  }
+
   </script>
   
   <style scoped>

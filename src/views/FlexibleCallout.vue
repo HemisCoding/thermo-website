@@ -77,15 +77,15 @@ export default defineComponent({
       categories: ['DESIGN MODERN', 'CASE', 'APARTAMENTE', 'GARAJE', 'FOISOARE', 'USI'],
       selectedCategory: 'ALL', // Categoria selectată implicit
       projects: [
-        { image: casaModern1, title: 'DESIGN MODERN', category: 'lore' },
-        { image: showroom, title: 'SHOW ROOM', category: 'lore' },
-        { image: casaModern2, title: 'DESIGN MODERN', category: 'Statistics' },
-        { image: garaj, title: 'GARAJ', category: 'Statistics' },
-        { image: casaModern3, title: 'DESIGN MODERN', category: 'Wordpress' },
-        { image: foisor, title: 'FOISOR', category: 'Photography' },
-        { image: casaModern5, title: 'DESIGN MODERN', category: 'Branding' },
-        { image: casaModern4, title: 'DESIGN MODERN', category: 'Branding' },
-        { image: casaModern8, title: 'DESIGN MODERN', category: 'Branding' },
+        { image: casaModern1, title: 'DESIGN MODERN', category: 'Rezidential' },
+        { image: showroom, title: 'SHOW ROOM', category: 'Altele' },
+        { image: casaModern2, title: 'DESIGN MODERN', category: 'Rezidential' },
+        { image: garaj, title: 'GARAJ', category: 'Garaj' },
+        { image: casaModern3, title: 'DESIGN MODERN', category: 'Rezidential' },
+        { image: foisor, title: 'FOISOR', category: 'Foisor' },
+        { image: casaModern5, title: 'DESIGN MODERN', category: 'Rezidential' },
+        { image: casaModern4, title: 'DESIGN MODERN', category: 'Rezidential' },
+        { image: casaModern8, title: 'DESIGN MODERN', category: 'Rezidential' },
       ],
       currentSlide: 0, // Slide-ul curent
     };
