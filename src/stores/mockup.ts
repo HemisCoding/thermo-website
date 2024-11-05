@@ -1,5 +1,21 @@
 import { defineStore } from 'pinia'
 import showroomImage from '@/assets/portofoliu/showroom-thermo.jpeg';
+import casaModerna1 from '@/assets/portofoliu/casa-moderna1.jpeg';
+import casaModerna2 from '@/assets/portofoliu/casa-moderna2.jpeg';
+import casaModerna3 from '@/assets/portofoliu/casa-moderna3.jpeg';
+import casaModerna4 from '@/assets/portofoliu/casa-moderna4.jpeg';
+import casaModerna5 from '@/assets/portofoliu/casa-moderna5.jpeg';
+import casaModerna6 from '@/assets/portofoliu/casa-moderna6.jpeg';
+import casaModerna7 from '@/assets/portofoliu/casa-modern7.jpeg';
+import casaModerna8 from '@/assets/portofoliu/casa-moderna8.jpeg';
+import casaModerna9 from '@/assets/portofoliu/casa-modern9.jpeg';
+import foisor1 from '@/assets/portofoliu/foisor.jpeg'
+import usa1 from '@/assets/portofoliu/usa.jpeg'
+import usaglisanta1 from '@/assets/portofoliu/usa-glisanta.jpeg'
+import garaj1 from '@/assets/portofoliu/garaj.jpeg'
+
+
+
 
 const getImgUrl = (imagePath: string) =>
   new URL(`${imagePath}`, import.meta.url).href
@@ -72,7 +88,7 @@ export const useAppData = defineStore('appData', () => {
   const projects = ref([
     {
       id: 1,
-      src: getImgUrl('../assets/portofoliu/casa-moderna1.jpeg'),
+      src: casaModerna1,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -82,7 +98,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 2,
-      src: getImgUrl('../assets/portofoliu/casa-moderna2.jpeg'),
+      src: casaModerna2,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -92,7 +108,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 3,
-      src: getImgUrl('../assets/portofoliu/casa-moderna3.jpeg'),
+      src: casaModerna3,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -102,7 +118,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 4,
-      src: getImgUrl('../assets/portofoliu/casa-moderna4.jpeg'),
+      src: casaModerna4,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -112,7 +128,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 5,
-      src: getImgUrl('../assets/portofoliu/casa-moderna5.jpeg'),
+      src: casaModerna5,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -122,7 +138,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 6,
-      src: getImgUrl('../assets/portofoliu/casa-moderna6.jpeg'),
+      src: casaModerna6,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -132,7 +148,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 7,
-      src: getImgUrl('../assets/portofoliu/casa-modern7.jpeg'),
+      src: casaModerna7,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -142,7 +158,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 8,
-      src: getImgUrl('../assets/portofoliu/casa-moderna8.jpeg'),
+      src: casaModerna8,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -154,7 +170,7 @@ export const useAppData = defineStore('appData', () => {
       id: 9,
       // src: getImgUrl('../assets/portofoliu/showroom-thermo.jpeg'),
       // src: require('@/assets/portofoliu/showroom-thermo.jpeg'),
-      src: showroomImage,
+      src: casaModerna9,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -164,7 +180,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 10,
-      src: getImgUrl('../assets/portofoliu/foisor.jpeg'),
+      src: showroomImage,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -174,7 +190,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 11,
-      src: getImgUrl('../assets/portofoliu/usa-glisanta.jpeg'),
+      src: garaj1,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -184,7 +200,7 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 12,
-      src: getImgUrl('../assets/portofoliu/usa.jpeg'),
+      src: foisor1,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
@@ -194,7 +210,17 @@ export const useAppData = defineStore('appData', () => {
     },
     {
       id: 13,
-      src: getImgUrl('../assets/portofoliu/garaj.jpeg'),
+      src: usa1,
+      date: new Date().toLocaleDateString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+      }),
+      category: 'garaje',
+    },
+    {
+      id: 14,
+      src: usaglisanta1,
       date: new Date().toLocaleDateString('en-US', {
         month: 'long',
         day: 'numeric',
