@@ -6,7 +6,8 @@
   import StandoutCallout from '@/views/StandoutCallout.vue'
   import Info from '@/views/Info.vue'
   import OurProduct from '@/views/OurProduct.vue'
-import OurServices from '@/views/OurServices.vue'
+  import OurServices from '@/views/OurServices.vue'
+  import Reviews from '@/views/Reviews.vue'
 
   interface Props {
     id?: string
@@ -27,6 +28,7 @@ import OurServices from '@/views/OurServices.vue'
         <WelcomeFeatures />
         <OurServices />
         <OurTeam />
+        <Reviews />
         <StandoutCallout />
         <FlexibleCallout />
         <Info />
