@@ -4,6 +4,7 @@
   import OurTeam from '@/views/OurTeam.vue'
   import Stats from '@/views/Stats.vue'
   import Info from '@/views/Info.vue'
+  import Reviews from '@/views/Reviews.vue'
   interface Props {
     id?: string
   }
@@ -20,6 +21,7 @@
         <Story />
         <StoryAlt />
         <OurTeam />
+        <Reviews />
         <Stats />
         <Info />
       </v-col>

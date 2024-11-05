@@ -2,6 +2,7 @@
   import OurServices from '@/views/OurServices.vue'
   import FlexibleCallout from '@/views/FlexibleCallout.vue';
   import Info from '@/views/Info.vue'
+  import Reviews from '@/views/Reviews.vue';
 
   interface Props {
     id?: string
@@ -18,6 +19,7 @@
       <v-col cols="12">
         <OurServices />
         <FlexibleCallout />
+        <Reviews />
         <Info />
       </v-col>
     </v-row>
