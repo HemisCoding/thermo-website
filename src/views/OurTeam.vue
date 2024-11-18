@@ -1,10 +1,33 @@
 <script setup lang="ts">
+import vasile from '@/assets/team/Vasile.jpeg';
+import emil from '@/assets/team/Emil.jpeg';
+
   const getImgUrl = (imagePath : string) => new URL(`${imagePath}`, import.meta.url).href
 
   const teamMembers = ref([
     {
-      title: 'CEO',
-      name: 'Neil Barnett',
+      title: '',
+      name: 'Vasile',
+      socialLinks: [
+        { link: 'https://linkedin.com', icon: 'mdi-linkedin' },
+        { link: 'https://twitter.com', icon: 'mdi-twitter' },
+        { link: 'mailto:sample@example.com', icon: 'mdi-email' },
+      ],
+      src: vasile,
+    },
+    {
+      title: '',
+      name: 'Gabriel',
+      socialLinks: [
+        { link: 'https://linkedin.com', icon: 'mdi-linkedin' },
+        { link: 'https://twitter.com', icon: 'mdi-twitter' },
+        { link: 'mailto:sample@example.com', icon: 'mdi-email' },
+      ],
+      src: emil,
+    },
+    {
+      title: '',
+      name: 'Cornel',
       socialLinks: [
         { link: 'https://linkedin.com', icon: 'mdi-linkedin' },
         { link: 'https://twitter.com', icon: 'mdi-twitter' },
@@ -13,28 +36,8 @@
       src: getImgUrl('../assets/team/rana-sawalha-IhuHLIxS_Tk-unsplash.jpg'),
     },
     {
-      title: 'COO',
-      name: 'Sherri Cayne',
-      socialLinks: [
-        { link: 'https://linkedin.com', icon: 'mdi-linkedin' },
-        { link: 'https://twitter.com', icon: 'mdi-twitter' },
-        { link: 'mailto:sample@example.com', icon: 'mdi-email' },
-      ],
-      src: getImgUrl('../assets/team/christopher-campbell-rDEOVtE7vOs-unsplash.jpg'),
-    },
-    {
-      title: 'CTO',
-      name: 'Erica Baker',
-      socialLinks: [
-        { link: 'https://linkedin.com', icon: 'mdi-linkedin' },
-        { link: 'https://twitter.com', icon: 'mdi-twitter' },
-        { link: 'mailto:sample@example.com', icon: 'mdi-email' },
-      ],
-      src: getImgUrl('../assets/team/dan-ROJFuWCsfmA-unsplash.jpg'),
-    },
-    {
-      title: 'CFO',
-      name: 'Wesley Graves',
+      title: '',
+      name: 'Emil',
       socialLinks: [
         { link: 'https://linkedin.com', icon: 'mdi-linkedin' },
         { link: 'https://twitter.com', icon: 'mdi-twitter' },
@@ -97,4 +100,5 @@
 .title {
   font-family: 'Poppins', sans-serif;
 }
+
 </style>

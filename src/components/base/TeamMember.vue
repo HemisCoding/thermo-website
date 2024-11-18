@@ -29,8 +29,8 @@ const props = defineProps<Props>();
       >
         <v-img
           :src="props.src"
-          height="100%"
-          min-height="300"
+          height="20vh"
+          min-height="35vh"
           cover
         >
           <v-overlay
