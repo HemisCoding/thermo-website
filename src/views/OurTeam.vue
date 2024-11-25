@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import vasile from '@/assets/team/Vasile.jpeg';
 import emil from '@/assets/team/Emil.jpeg';
+import constatin from '@/assets/team/constantin.jpeg';
 
   const getImgUrl = (imagePath : string) => new URL(`${imagePath}`, import.meta.url).href
 
@@ -27,13 +28,13 @@ import emil from '@/assets/team/Emil.jpeg';
     },
     {
       title: '',
-      name: 'Cornel',
+      name: 'Constantin',
       socialLinks: [
         { link: 'https://linkedin.com', icon: 'mdi-linkedin' },
         { link: 'https://twitter.com', icon: 'mdi-twitter' },
         { link: 'mailto:sample@example.com', icon: 'mdi-email' },
       ],
-      src: getImgUrl('../assets/team/rana-sawalha-IhuHLIxS_Tk-unsplash.jpg'),
+      src: constatin,
     },
     {
       title: '',
